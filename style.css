@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+:root {
+  /* ### Primary */
+  --Orange: hsl(26, 100%, 55%);
+  --Pale-orange: hsl(25, 100%, 94%);
+
+  /* ### Neutral */
+  --Very-dark-blue: hsl(220, 13%, 13%);
+  --Dark-grayish-blue: hsl(219, 9%, 45%);
+  --Grayish-blue: hsl(220, 14%, 75%);
+  --Light-grayish-blue: hsl(223, 64%, 98%);
+  --White: hsl(0, 0%, 100%);
+
+  /* (with 75% opacity for lightbox background) */
+  --Black: hsl(0, 0%, 0%);
+}
+
+body {
+  font-size: 16px;
+  min-height: 100vh;
+}
+
+main {
+  padding: 20px 10%;
+}
+
+/* ---------------------NAVIGATION BAR START---------------------- */
+nav {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--Grayish-blue);
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.logo {
+  width: 90px;
+}
+
+nav ul {
+  flex: 1;
+  list-style: none;
+  margin: 0 60px;
+  text-align: left;
+}
+nav ul li {
+  display: inline-block;
+  margin: 10px 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 12px;
+  color: var(--Dark-grayish-blue);
+}
+
+.menuIcons {
+  display: none;
+}
+
+.cartIcon {
+  width: 15px;
+}
+
+.ProfileAvatar {
+  width: 30px;
+  margin-left: 40px;
+}
+
+.right-nav-bar {
+  display: flex;
+  align-items: center;
+}
+
+/* --------------------------MAIN CONTENT STARTS--------------------- */
+
+.page-content {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery-wrapper {
+  flex-basis: 49%;
+  background: var(--Pale-orange);
+  min-height: 60vh;
+  flex-wrap: wrap;
+}
+
+.gallery-Info {
+  flex-basis: 49%;
+  background: var(--Grayish-blue);
+  min-height: 60vh;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  main {
+    padding: 0;
+  }
+  .menuIcons {
+    display: block;
+  }
+  nav {
+    justify-content: space-between;
+    border-bottom: 0;
+    padding: 20px 6%;
+    position: relative;
+  }
+
+  nav ul {
+    /* display: none; */
+    position: fixed;
+    height: 100vh;
+    left: -200px;
+    top: 0;
+    width: 200px;
+    background-color: var(--White);
+    padding-top: 50px;
+    margin: 0;
+    transition: 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 24px;
+  }
+  nav ul li a {
+    color: var(--Black);
+    font-weight: 700;
+  }
+  .closeIcon {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+  }
+
+  .left-side-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    margin-left: 15px;
+    width: 120px;
+  }
+
+  .ProfileAvatar {
+    width: 25px;
+    margin-left: 20px;
+  }
+
+  /* ----------------MAIN---------------- */
+  .page-content {
+    flex-direction: column;
+    padding-top: 0;
+  }
+}

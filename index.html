@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="U-XA-Compatible" IE="edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <nav>
+        <div class="left-side-nav">
+          <img
+            src="./images/icon-menu.svg"
+            alt="menuIcon"
+            class="menuIcons"
+            onclick="openMenu()"
+          />
+          <img src="./images/logo.svg" alt="logo" class="logo" />
+        </div>
+
+        <ul id="sideMenu">
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <img
+            src="./images/icon-close.svg"
+            alt="closeIcon"
+            class="menuIcons closeIcon"
+            onclick="closeMenu()"
+          />
+        </ul>
+        <div class="right-nav-bar">
+          <img src="./images/icon-cart.svg" alt="cart" class="cartIcon" />
+          <div class="userProfile">
+            <img
+              src="./images/image-avatar.png"
+              alt="avatar"
+              class="ProfileAvatar"
+            />
+          </div>
+        </div>
+      </nav>
+      <!-----------------------------NAV STOP----------------------->
+      <section>
+        <div class="page-content">
+          <div class="gallery-wrapper">
+            <div class="gallery">
+              <div class="col1"></div>
+              <div class="col2"></div>
+            </div>
+          </div>
+          <div class="gallery-Info"></div>
+        </div>
+      </section>
+      <footer>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Your Name Here</a>.
+        </div>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
