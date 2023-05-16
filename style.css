@@ -122,7 +122,7 @@ nav ul li a {
     position: relative;
   }
 
-  nav ul {
+  nav #sideMenu {
     /* display: none; */
     position: fixed;
     height: 100vh;
@@ -131,15 +131,19 @@ nav ul li a {
     width: 200px;
     background-color: var(--White);
     padding-top: 50px;
-    margin: 0;
     transition: 0.5s;
+    text-align: left;
   }
 
-  nav ul li {
+  nav #sideMenu ul {
+    margin: 0;
+  }
+
+  nav #sideMenu ul li {
     display: block;
     margin: 24px;
   }
-  nav ul li a {
+  nav #sideMenu ul li a {
     color: var(--Black);
     font-weight: 700;
   }
