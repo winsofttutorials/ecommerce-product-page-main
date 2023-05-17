@@ -47,13 +47,28 @@
         </div>
 
         <div class="right-nav-bar">
-          <img src="./images/icon-cart.svg" alt="cart" class="cartIcon" />
+          <img
+            src="./images/icon-cart.svg"
+            alt="cart"
+            class="cartIcon"
+            onclick="cartNewHeight()"
+          />
           <div class="userProfile">
             <img
               src="./images/image-avatar.png"
               alt="avatar"
               class="ProfileAvatar"
             />
+          </div>
+          <div class="cartNotification-page">
+            <div class="cartFrame">
+              <div class="cart-title">
+                <h3 class="cartHeader">Cart</h3>
+              </div>
+              <div class="cartInfo">
+                <p id="cartMsg">Your cart is empty</p>
+              </div>
+            </div>
           </div>
         </div>
       </nav>

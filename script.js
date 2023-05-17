@@ -51,3 +51,11 @@ activeProduct[3].onclick = function () {
   overLayering();
   activeBorder();
 };
+
+// Cart Toggle
+
+let cartHeight = document.querySelector(".cartNotification-page");
+
+function cartNewHeight() {
+  cartHeight.classList.toggle("newHeight");
+}

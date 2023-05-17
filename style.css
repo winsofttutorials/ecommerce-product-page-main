@@ -95,6 +95,7 @@ nav #sideMenu ul li a {
 .right-nav-bar {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 /* --------------------------MAIN CONTENT STARTS--------------------- */
@@ -282,6 +283,46 @@ nav #sideMenu ul li a {
   -webkit-text-fill-color: var(--White);
 }
 
+.cartNotification-page {
+  width: 200px;
+  height: 0;
+  background-color: var(--White);
+  position: absolute;
+  top: 50px;
+  right: -20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: height 0.3s;
+  z-index: 3;
+}
+.cartNotification-page.newHeight {
+  height: 150px;
+}
+
+.cartFrame {
+  width: 100%;
+}
+.cart-title {
+  padding: 10px;
+  border-bottom: 1px solid var(--Grayish-blue);
+}
+
+.cartHeader {
+  font-size: 9px;
+}
+#cartMsg {
+  text-align: center;
+  font-size: 9px;
+}
+
+.cartInfo {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (max-width: 375px) {
   main {
     padding: 0;
@@ -465,5 +506,9 @@ nav #sideMenu ul li a {
   }
   #count {
     font-size: 14px;
+  }
+  .cartNotification-page {
+    width: 300px;
+    right: 5px;
   }
 }
