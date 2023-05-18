@@ -323,7 +323,7 @@ nav #sideMenu ul li a {
   justify-content: center;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   main {
     padding: 0;
   }
@@ -453,9 +453,10 @@ nav #sideMenu ul li a {
   }
 
   .productDescription {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 22px;
     margin-bottom: 20px;
+    max-width: 325px;
   }
 
   .productDiscount {
@@ -509,6 +510,6 @@ nav #sideMenu ul li a {
   }
   .cartNotification-page {
     width: 300px;
-    right: 5px;
+    right: 13px;
   }
 }
