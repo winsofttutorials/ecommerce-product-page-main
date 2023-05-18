@@ -59,3 +59,27 @@ let cartHeight = document.querySelector(".cartNotification-page");
 function cartNewHeight() {
   cartHeight.classList.toggle("newHeight");
 }
+
+// -------------CART QUANTITY COUNT---------------
+
+let count = document.getElementById("count");
+let decrement = document.getElementById("decrement");
+let increment = document.getElementById("increment");
+
+let counter = 0;
+
+decrement.onclick = function () {
+  if (counter < 1) {
+    count.innerHTML = 0;
+  } else if (count !== 0) {
+    counter -= 1;
+    count.innerHTML = counter;
+  }
+};
+decrement.addEventListener("click", decrement);
+
+increment.onclick = function () {
+  counter += 1;
+  count.innerHTML = counter;
+};
+increment.addEventListener("click", increment);
